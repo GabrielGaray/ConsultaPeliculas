@@ -1,0 +1,9 @@
+<main>
+    <p>Results for:</p>
+    <h1>{{searchTerm}}</h1>
+
+    <h2>Peliculas</h2>
+    <section>
+        <app-title *ngFor="let movie of resultSet" [title]="movie.title" [year]="movie.year" [cover]="movie.cover" [imbdID]="movie.imbdID"></app-title>
+    </section>
+</main>

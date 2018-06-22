@@ -1,0 +1,7 @@
+<header>
+    <div>
+        <input type="text" id="search" placeholder="Search" #input (keydown.enter)="sendValue(input.value)">
+        <input type="submit" value="Go!" (click)="sendValue(input.value)">
+    </div>
+</header>
+<app-index [searchTerm]="this.searchTerm" [resultSet]="this.resultSet"></app-index>
